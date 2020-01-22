@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+._*
+*.out
+*.log
+config
+dump.rdb

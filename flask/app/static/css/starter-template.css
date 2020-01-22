@@ -1,0 +1,153 @@
+/*
+ * Style tweaks
+ * --------------------------------------------------
+ */
+html,
+body {
+  height:100%;
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+body {
+  padding-top: 70px;
+}
+footer {
+  padding: 30px 0;
+}
+
+
+#img_container {
+    position:relative;
+    display:inline-block;
+    text-align:center;
+}
+
+.img_button {
+    position:absolute;
+    bottom:10px;
+    right:10px;
+    width:30px;
+    height:30px;
+}
+/* FOR HIGHMAP
+-------------------------------------------------- */
+
+#container_map {
+  height: 500px; 
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+.highcharts-tooltip>span {
+  padding: 10px;
+  white-space: normal !important;
+  width: 200px;
+}
+
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+
+.f32 .flag {
+  vertical-align: middle !important;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  height: 500px;
+  margin-bottom: 30px;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel .item {
+  height: 500px;
+  background-color: #777;
+}
+.carousel-inner > .item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 500px;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+
+/*
+ * Off Canvas
+ * --------------------------------------------------
+ */
+@media screen and (max-width: 767px) {
+  .row-offcanvas {
+    position: relative;
+    -webkit-transition: all .25s ease-out;
+         -o-transition: all .25s ease-out;
+            transition: all .25s ease-out;
+  }
+
+  .row-offcanvas-right {
+    right: 0;
+  }
+
+  .row-offcanvas-left {
+    left: 0;
+  }
+
+  .row-offcanvas-right
+  .sidebar-offcanvas {
+    right: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left
+  .sidebar-offcanvas {
+    left: -50%; /* 6 columns */
+  }
+
+  .row-offcanvas-right.active {
+    right: 50%; /* 6 columns */
+  }
+
+  .row-offcanvas-left.active {
+    left: 50%; /* 6 columns */
+  }
+
+  .starter-template {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .panel-transparent {
+      background: none;
+  }
+
+  .panel-transparent .panel-heading{
+      background: rgba(122, 130, 136, 0.2);
+  }
+
+  .panel-transparent .panel-body{
+      background: rgba(46, 51, 56, 0.2);
+  }
+}
